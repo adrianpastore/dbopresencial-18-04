@@ -9,8 +9,7 @@ informecurso.addEventListener('submit', function(e) {
 });
 
 const forme = document.querySelector('form#escolher');
-const selectCurso =
-    document.querySelector('select#cursos');
+const selectCurso = document.querySelector('select#cursos');
 const tbody = document.querySelector('tbody');
 forme.addEventListener('submit', function(e) {
     e.preventDefault(e);
@@ -24,17 +23,12 @@ forme.addEventListener('submit', function(e) {
         const row = `<tr>${tds}</tr>`;
         tbody.innerHTML += row;
     }
-    console.log(tbody.children.children);
 });
 
 tbody.addEventListener('click', function(e) {
-    console.log(e.target.className);
     if (e.target.className === 'excluir') {
-        console.log('Excluir');
         if (confirm('Confirma?')) {
             e.target.parentElement.parentElement.remove();
         }
     }
 });
-
-
