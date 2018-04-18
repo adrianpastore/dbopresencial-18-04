@@ -20,8 +20,7 @@ forme.addEventListener('submit', function(e) {
         const btup = `<button class="up">UP</button>`;
         const btdown = `<button class="down">Down</button>`;
         const bt = `<button class="excluir">Excluir</button>`;
-        const tds = `<td>${Curso
-        }</td> <td>${bt}</td> <td>${btup}</td> <td>${btdown}</td>`
+        const tds = `<td>${Curso}</td> <td>${bt}</td> <td>${btup}</td> <td>${btdown}</td>`
         const row = `<tr>${tds}</tr>`;
         tbody.innerHTML += row;
     }
